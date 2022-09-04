@@ -1,0 +1,60 @@
+{
+    "name": "hyperf-extension/hashing",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "hashing"
+    ],
+    "description": "The Hyperf Hashing package.",
+    "authors": [
+		{
+            "name": "angeltxwh",
+            "email": "admin@ilover.me"
+        },
+        {
+            "name": "Eric Zhu",
+            "email": "eric@zhu.email"
+        },
+        {
+            "name": "Taylor Otwell",
+            "email": "taylor@laravel.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HyperfExtension\\Hashing\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "hyperf/config": "^3.0.0",
+        "hyperf/di": "^3.0.0",
+        "hyperf/framework": "^3.0.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "hyperf/testing": "^3.0.0",
+        "phpstan/phpstan": "^0.12",
+        "swoole/ide-helper": "dev-master"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit --prepend tests/bootstrap.php -c phpunit.xml --colors=always",
+        "analyse": "phpstan analyse --memory-limit 1024M -l 0 ./src",
+        "cs-fix": "php-cs-fixer fix $1"
+    },
+    "extra": {
+        "hyperf": {
+            "config": "HyperfExtension\\Hashing\\ConfigProvider"
+        }
+    }
+}
