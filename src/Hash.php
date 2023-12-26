@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 namespace HyperfExtension\Hashing;
 
-use Hyperf\Utils\ApplicationContext;
+use Hyperf\Context\ApplicationContext;
 use HyperfExtension\Hashing\Contract\DriverInterface;
 use HyperfExtension\Hashing\Contract\HashInterface;
 
