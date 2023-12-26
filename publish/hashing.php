@@ -8,6 +8,8 @@ declare(strict_types=1);
  * @contact  admin@ilover.me
  * @license  https://github.com/hyperf-extension/hashing/blob/master/LICENSE
  */
+use function Hyperf\Support\env;
+
 return [
     /*
     |--------------------------------------------------------------------------

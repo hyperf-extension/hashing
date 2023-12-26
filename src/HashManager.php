@@ -16,6 +16,8 @@ use HyperfExtension\Hashing\Contract\HashInterface;
 use HyperfExtension\Hashing\Driver\BcryptDriver;
 use InvalidArgumentException;
 
+use function Hyperf\Support\make;
+
 class HashManager implements HashInterface
 {
     /**
